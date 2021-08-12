@@ -27,11 +27,14 @@ horseImage.addEventListener('click',  () => {
 document.addEventListener('keydown', function (event) {
     if (event.key === 'h') {
       horseSound.play();
+      titleArea.textContent = 'horse';
     }
     if (event.key === 'd') {
       dogSound.play();
+      titleArea.textContent = 'dog';
     }
     if (event.key === 'c') {
         catSound.play();
+        titleArea.textContent = 'cat';
     }
   });
