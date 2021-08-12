@@ -16,8 +16,10 @@ catImage.addEventListener('click', () => {
 
 dogImage.addEventListener('click', () => {
     dogSound.play();
+    titleArea.textContent = 'dog';
 });
 
 horseImage.addEventListener('click', () => {
     horseSound.play();
+    titleArea.textContent = 'horse';
 });
