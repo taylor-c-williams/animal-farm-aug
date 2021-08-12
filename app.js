@@ -9,32 +9,47 @@ const horseSound = document.getElementById('horse-sound');
 
 const titleArea = document.getElementById('title-area');
 
-catImage.addEventListener('click', () => {
-    catSound.play();
-    titleArea.textContent = 'cat';
+function playSoundAndChangeText(sound, animalName){
+    sound.play();
+    titleArea.textContent = animalName;
+    setTimeout(() => {
+        titleArea.textContent = '';
+    }, 2000);
+}
+
+catImage.addEventListener('click', ()=> {
+    playSoundAndChangeText(catSound, 'cat');
+});
+dogImage.addEventListener('click', ()=> {
+    playSoundAndChangeText(dogSound, 'dog');
+});
+horseImage.addEventListener('click', ()=> {
+    playSoundAndChangeText(horseSound, 'horse');
 });
 
-dogImage.addEventListener('click', () => {
-    dogSound.play();
-    titleArea.textContent = 'dog';
-});
+// catImage.addEventListener('click', () => {
+//     catSound.play();
+//     titleArea.textContent = 'cat';
+// });
 
-horseImage.addEventListener('click',  () => {
-    horseSound.play();
-    titleArea.textContent = 'horse';
-});
+// dogImage.addEventListener('click', () => {
+//     dogSound.play();
+//     titleArea.textContent = 'dog';
+// });
 
-document.addEventListener('keydown', function (event) {
+// horseImage.addEventListener('click', () => {
+//     horseSound.play();
+//     titleArea.textContent = 'horse';
+// });
+
+document.addEventListener('keydown', function(event) {
     if (event.key === 'h') {
-      horseSound.play();
-      titleArea.textContent = 'horse';
+        playSoundAndChangeText(horseSound, 'horse');
     }
     if (event.key === 'd') {
-      dogSound.play();
-      titleArea.textContent = 'dog';    
+        playSoundAndChangeText(dogSound, 'dog');  
     }
     if (event.key === 'c') {
-        catSound.play();
-        titleArea.textContent = 'cat';
+        playSoundAndChangeText(catSound, 'cat');
     }
-  });
+});
