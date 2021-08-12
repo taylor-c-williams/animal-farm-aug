@@ -29,15 +29,30 @@ main {
 .images img {
 	margin: 10px;
 	border-radius: 10px;
-	border: 2px pink dashed;
+	border: 3px limegreen dashed;
 }
 
 .title-area {
-	color: hotpink;
+	color: limegreen;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
     font-size:4rem;
 
+}
+
+.cat{
+	transition:all .2s ease-in-out;
+	cursor: pointer;
+}
+
+.dog{
+	transition:all .2s ease-in-out;
+	cursor: pointer;
+}
+
+.horse{
+	transition:all .2s ease-in-out;
+	cursor: pointer;
 }
