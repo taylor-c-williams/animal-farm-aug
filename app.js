@@ -27,21 +27,6 @@ horseImage.addEventListener('click', ()=> {
     playSoundAndChangeText(horseSound, 'Horse-Patrick');
 });
 
-// catImage.addEventListener('click', () => {
-//     catSound.play();
-//     titleArea.textContent = 'cat';
-// });
-
-// dogImage.addEventListener('click', () => {
-//     dogSound.play();
-//     titleArea.textContent = 'dog';
-// });
-
-// horseImage.addEventListener('click', () => {
-//     horseSound.play();
-//     titleArea.textContent = 'horse';
-// });
-
 document.addEventListener('keydown', function(event) {
     if (event.key === 'h') {
         playSoundAndChangeText(horseSound, 'Horse-Patrick');
