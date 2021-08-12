@@ -45,7 +45,7 @@ main {
 	cursor: pointer;
 }
 
-.cat :hover{
+.cat :hover {
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
 }
@@ -55,17 +55,17 @@ main {
 	cursor: pointer;
 }
 
-.dog :hover{
+.dog :hover {
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
 }
 
-.horse{
+.horse {
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
 }
 
-.horse :hover{
+.horse :hover {
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
 }
@@ -73,64 +73,66 @@ main {
 /* Wobble Skew */
 @-webkit-keyframes hvr-wobble-skew {
 	16.65% {
-	  -webkit-transform: skew(-12deg);
-	  transform: skew(-12deg);
+		-webkit-transform: skew(-12deg);
+		transform: skew(-12deg);
 	}
 	33.3% {
-	  -webkit-transform: skew(10deg);
-	  transform: skew(10deg);
+		-webkit-transform: skew(10deg);
+		transform: skew(10deg);
 	}
 	49.95% {
-	  -webkit-transform: skew(-6deg);
-	  transform: skew(-6deg);
+		-webkit-transform: skew(-6deg);
+		transform: skew(-6deg);
 	}
 	66.6% {
-	  -webkit-transform: skew(4deg);
-	  transform: skew(4deg);
+		-webkit-transform: skew(4deg);
+		transform: skew(4deg);
 	}
 	83.25% {
-	  -webkit-transform: skew(-2deg);
-	  transform: skew(-2deg);
+		-webkit-transform: skew(-2deg);
+		transform: skew(-2deg);
 	}
 	100% {
-	  -webkit-transform: skew(0);
-	  transform: skew(0);
+		-webkit-transform: skew(0);
+		transform: skew(0);
 	}
-  }
-  @keyframes hvr-wobble-skew {
+}
+@keyframes hvr-wobble-skew {
 	16.65% {
-	  -webkit-transform: skew(-12deg);
-	  transform: skew(-12deg);
+		-webkit-transform: skew(-12deg);
+		transform: skew(-12deg);
 	}
 	33.3% {
-	  -webkit-transform: skew(10deg);
-	  transform: skew(10deg);
+		-webkit-transform: skew(10deg);
+		transform: skew(10deg);
 	}
 	49.95% {
-	  -webkit-transform: skew(-6deg);
-	  transform: skew(-6deg);
+		-webkit-transform: skew(-6deg);
+		transform: skew(-6deg);
 	}
 	66.6% {
-	  -webkit-transform: skew(4deg);
-	  transform: skew(4deg);
+		-webkit-transform: skew(4deg);
+		transform: skew(4deg);
 	}
 	83.25% {
-	  -webkit-transform: skew(-2deg);
-	  transform: skew(-2deg);
+		-webkit-transform: skew(-2deg);
+		transform: skew(-2deg);
 	}
 	100% {
-	  -webkit-transform: skew(0);
-	  transform: skew(0);
+		-webkit-transform: skew(0);
+		transform: skew(0);
 	}
-  }
-  .hvr-wobble-skew {
+}
+.hvr-wobble-skew {
 	display: inline-block;
 	vertical-align: middle;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
-  .hvr-wobble-skew:hover, .hvr-wobble-skew:focus, .hvr-wobble-skew:active {
+}
+.hvr-wobble-skew:hover,
+.hvr-wobble-skew:focus,
+.hvr-wobble-skew:active {
 	-webkit-animation-name: hvr-wobble-skew;
 	animation-name: hvr-wobble-skew;
 	-webkit-animation-duration: 1s;
@@ -139,5 +141,4 @@ main {
 	animation-timing-function: ease-in-out;
 	-webkit-animation-iteration-count: 1;
 	animation-iteration-count: 1;
-  }
-  
+}
