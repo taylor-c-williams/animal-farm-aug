@@ -27,7 +27,7 @@ main {
 
 .images img {
 	margin: 10px;
-	border-radius: 10px;
+	border-radius: 100px;
 	border: 3px limegreen dashed;
 }
 
