@@ -1,23 +1,22 @@
-
-*{
-	box-sizing:border-box;
+* {
+	box-sizing: border-box;
 }
 
-body,html{
-	height:100%;
-	width:100%;
-	margin:0;
-	padding:0;
+body,
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
-body{
-	background-image:url('https://i.pinimg.com/originals/73/7d/e0/737de0f47bbf7015bd13033150b2797b.jpg')
+body {
+	background-image: url("https://i.pinimg.com/originals/73/7d/e0/737de0f47bbf7015bd13033150b2797b.jpg");
 }
-
 
 main {
 	display: grid;
-	grid-template-rows: .25fr 1fr;
+	grid-template-rows: 0.25fr 1fr;
 }
 
 .images {
@@ -34,25 +33,24 @@ main {
 
 .title-area {
 	color: limegreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size:4rem;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Quicksand", sans-serif;
+	font-size: 4rem;
 }
 
-.cat{
-	transition:all .2s ease-in-out;
+.cat {
+	transition: all 0.2s ease-in-out;
 	cursor: pointer;
 }
 
-.dog{
-	transition:all .2s ease-in-out;
+.dog {
+	transition: all 0.2s ease-in-out;
 	cursor: pointer;
 }
 
-.horse{
-	transition:all .2s ease-in-out;
+.horse {
+	transition: all 0.2s ease-in-out;
 	cursor: pointer;
 }
