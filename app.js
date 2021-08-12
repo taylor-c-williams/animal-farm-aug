@@ -13,18 +13,18 @@ function playSoundAndChangeText(sound, animalName){
     sound.play();
     titleArea.textContent = animalName;
     setTimeout(() => {
-        titleArea.textContent = '';
+        titleArea.textContent = 'Which Patrick Stewart is best?';
     }, 2000);
 }
 
 catImage.addEventListener('click', ()=> {
-    playSoundAndChangeText(catSound, 'cat');
+    playSoundAndChangeText(catSound, 'Cat-Patrick');
 });
 dogImage.addEventListener('click', ()=> {
-    playSoundAndChangeText(dogSound, 'dog');
+    playSoundAndChangeText(dogSound, 'Dog-Patrick');
 });
 horseImage.addEventListener('click', ()=> {
-    playSoundAndChangeText(horseSound, 'horse');
+    playSoundAndChangeText(horseSound, 'Horse-Patrick');
 });
 
 // catImage.addEventListener('click', () => {
@@ -44,12 +44,12 @@ horseImage.addEventListener('click', ()=> {
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'h') {
-        playSoundAndChangeText(horseSound, 'horse');
+        playSoundAndChangeText(horseSound, 'Horse-Patrick');
     }
     if (event.key === 'd') {
-        playSoundAndChangeText(dogSound, 'dog');  
+        playSoundAndChangeText(dogSound, 'Dog-Patrick');  
     }
     if (event.key === 'c') {
-        playSoundAndChangeText(catSound, 'cat');
+        playSoundAndChangeText(catSound, 'Cat-Patrick');
     }
 });
