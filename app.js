@@ -31,7 +31,7 @@ document.addEventListener('keydown', function (event) {
     }
     if (event.key === 'd') {
       dogSound.play();
-      titleArea.textContent = 'dog';
+      titleArea.textContent = 'dog';    
     }
     if (event.key === 'c') {
         catSound.play();
