@@ -19,7 +19,19 @@ dogImage.addEventListener('click', () => {
     titleArea.textContent = 'dog';
 });
 
-horseImage.addEventListener('click', () => {
+horseImage.addEventListener('click',  () => {
     horseSound.play();
     titleArea.textContent = 'horse';
 });
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'h') {
+      horseSound.play();
+    }
+    if (event.key === 'd') {
+      dogSound.play();
+    }
+    if (event.key === 'c') {
+        catSound.play();
+    }
+  });
